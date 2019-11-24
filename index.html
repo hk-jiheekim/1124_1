@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>우리의 소리</title>
+	<style type="text/css">
+		@font-face { font-family: '국립박물관문화재단클래식B'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.0/국립박물관문화재단클래식B.woff') format('woff'); font-weight: normal; font-style: normal; }
+
+		@font-face { font-family: 'Chosunilbo_myungjo'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/Chosunilbo_myungjo.woff') format('woff'); font-weight: normal; font-style: normal; }
+
+		body{padding: 0px; margin: 0px; background-color: white; background-color: white;}
+		p, li{font-family: 'Chosunilbo_myungjo'; line-height: 1.7em;}
+		
+		.wrap{padding: 0px; margin: 0px; background-color:white; color: black; height: 800px; width: 800px; margin: auto; position: relative;}
+		h2{font-size: 35px; font-family: '국립박물관문화재단클래식B';}
+
+
+		#monitor{position: fixed; background: black; top: 0px; right: 0px; width: 70px; height: 20px; padding: 5px; color: white; z-index: 999;}
+
+		ul{list-style-type: none;}
+		li{float: left;}
+		li a{text-decoration: none; color: black; font-weight: bold; display: block; text-align:center; padding: 5px 35px; }
+		li a:link, li a:hover; li a:active;, li a:visited{display:block; text-decoration: none; color: black; font-weight: bold; transition: all 1s;}
+		li a:hover{background: black; color: white;text-decoration: none;}
+		section.na{height: 50px; position: fixed; left: 800px; z-index: 999; top:0;}
+		
+		
+
+		header .wrap{width: 100%; height: 400px; padding: 0px; margin: 0px;}
+		header .wrap h1{text-align: center; position: absolute; top: 250px; left:calc(50% - 550px); font-family: '국립박물관문화재단클래식B'; font-weight: bold;}
+
+		.a .wrap {position: relative; height: 450px;}
+		.a .wrap p {position: absolute; top: 50px; width: 500px; opacity: 0;}
+
+		.b .wrap{position: relative; height: 800px; width: 100%; background-image: url(wave2.png); background-attachment: fixed; height: 1400px;}
+		.b .wrap h2{position: absolute; top: 100px; left: 150px;} 
+		.b .wrap p{position: absolute; top: 250px; width: 500px; left: 200px; text-align: left; word-break: keep-all;
+		}
+		.b .bbpan{position: absolute; width: 600px; height: 300px; background-color: white; top: 230px; left: 150px; opacity: 0.7;}
+		.b .wave{position: absolute; top:-300px; left: 10px; width: 100%; height: 700px;}
+
+		.b1 .wrap{height: 200px; width: 1200px; }
+		.b .bwa{position: absolute; height: 800px; width: 100%; bottom:-50px;}
+		
+	
+		.c .wrap { background-image: url(./flower.png); width: 100%; background-size: cover; background-attachment: fixed;height: 1200px;}
+		.c .wrap h2{position: absolute; top: 500px; right: 600px;}	
+		.c .wrap p{opacity: 0px; position: absolute; top: 600px; width: 500px; right: 150px; word-break: keep-all; text-align: right; opacity: 0;}
+		.c .wrap .cnav{height: 100px; position: absolute; top: 1000px; right: 300px;}
+		.c .cimg{position: absolute; height: 500px; top: 300px; left: 600px; }
+		
+
+		.d .wrap{background-image: url(./flower2.png); background-size: cover; width: 100%;}
+		.d .wrap h2{position: absolute; top:150px; left:250px; }
+		.d .wrap p{position: absolute;  top: 350px; width: 450px; word-break: keep-all; left: 300px; opacity: 0;}
+
+		.d1 .wrap {height: 100px; width: 800px; left: -50px;}
+		.rab{position: absolute; width: 250px; top: 190px; right: 300px;}
+		.tur{position: absolute; width: 250px; top: 140px;right: 180px; }
+		#hanv{opacity: 0; position: absolute; top: 850px; left: 250px;}
+
+		#iframe_main{height: 315px; width: 560px; position: absolute; left: 300px; opacity: 0;}
+		#idiv{position: sticky; top: 50px; left: 500px; right: 0; bottom: 0;}
+
+		#iframe_main2{height: 315px; width: 560px; position: absolute; left: 300px; opacity: 0;}
+		#idiv2{position: sticky; top: 50px; left: 500px; right: 0; bottom: 0;}
+
+		#iframe_main3{height: 315px; width: 560px; position: absolute; left: 900px; opacity: 0;}
+		#idiv3{position: sticky; top: 0px; left: 600px; right: 0; bottom: 0;}
+		
+
+		footer .wrap{width: 100%; height: 70px;}
+		footer .wrap p{text-align: center;}
+
+
+
+		
+
+		@keyframes vi1{
+			from{opacity: 0;}
+			to{opacity: 1;}}
+
+		@keyframes vi2{
+			from{opacity: 1;}
+			to{opacity: 0;}}
+
+		@keyframes a{
+			from{top: 80px; opacity: 0;}
+			to{top: 50px; opacity: 1;}}
+
+		@keyframes c{
+			from{top: 700px; opacity: 0;}
+			to{top: 600px; opacity: 1;}}
+
+		@keyframes d{
+			from{top: 450px; opacity: 0;}
+			to{top: 350px; opacity: 1;}}
+
+
+		
+	</style>
+</head>
+<body>
+	<div id="monitor"></div>
+		<section class="na">
+		<nav>
+		<ul>
+			
+			<li><a href="#cc">사랑가</a></li>
+			<li><a href="#dd">난봉가</a></li>
+			<li><a href="">태평가</a></li>
+			<li><a href="#bb">수궁가</a></li>
+
+		</ul>
+		</nav>
+	</section>
+
+	<header >
+		<div class="wrap">
+			<h1> 우리의 소리를 찾아서</h1>
+		</div>
+	</header>
+
+	<section class="a">
+		<div class="wrap">
+
+			<p id="ap" >우리의 소리를 찾아서는 전통의 판소리, 민요 등을 소개해주며, 현재 새롭게 각색된 판소리와 민요들까지 알려주며 전통음악을 보다 쉽게 즐길 수 있게 해준다.</p>
+		</div>
+	</section>
+
+	
+	 
+	<section class="c" id="cc">
+		<div class="wrap">
+			<div style="position: absolute; top: 400px; right: 600px; font-family: '국립박물관문화재단클래식B'; color: gray;">눌러 주세요</div>
+				<img id="hanc" class="cimg" src="./hanbok.png">
+			<h2>사랑가</h2>
+			<p id="cp">사랑가는 판소리 〈춘향가〉 중 한 대목이다. ‘사랑가’ 대목은 판소리 〈춘향가〉의 가장 중요한 주제이다. 사랑가는 두 사람의 사랑이 점점 깊어 가는 과정을 노래로 부르는데, 그 구성은 두 사람이 문답하는 식으로 되어 있다. 사설은 사랑에 얽힌 글자 풀이와 사랑에 얽힌 고사를 인용한 것이 많으며 서로 업고 노는 대목, 맛있는 음식을 권하는 대목 등으로 아기자기하게 짜여 있다.
+			</p> 
+		
+			<iframe id="hanv" width="560" height="315" src="https://www.youtube.com/embed/SXvEm0IJ1fc"  frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	
+	<div id="cm" class="cnav">
+			
+			<ul>
+				<li ><a href="https://youtu.be/gGpBQdJNgME">1.사랑가</a></li>
+				<li><a href="https://youtu.be/WJRZDNcgIQM">2.사랑가</a></li>
+				<li><a href="https://youtu.be/2Xa0Wgon-1o">3.사랑가</a></li>
+			</ul>
+		</div>
+		
+		</div>
+	</section>
+
+	<section class="d" id="dd">
+		<div class="wrap">
+			<h2>난봉가</h2>
+			<p id="dp" >「난봉가」는 황해도 지방의 민요이다. 난봉가는 많은 종류가 있으나, 그 원판은 「긴난봉가」이다. 도드리장단이나 중모리장단으로 혹은 굿거리장단으로도 많이 한다. 노랫말은 대체로 사랑타령이다. 보통 「난봉가」라 하면 「긴난봉가」, 「자진난봉가」, 「사설난봉가」를 아우러는 말이다.</p>
+			
+		</div>
+	</section>
+	<section class="d1">
+		<div class="wrap">
+			
+			<ul>
+				<li><a href="https://youtu.be/lWY-5oeLTL4E">1.난봉가</a></li>
+				<li><a href="https://youtu.be/UD6xVP_8d5I">2.난봉가</a></li>
+				<li><a href="https://youtu.be/QLRxO9AmNNo">3.난봉가 모음</a></li>
+			</ul>
+		</div>
+	</section>
+	<section class="b" id="bb">
+
+		<div class="wrap" >
+
+
+			<div id="idiv">
+				<iframe id="iframe_main" width="560" height="315" src="https://www.youtube.com/embed/jbK68mHsLfg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			</div>
+
+			<div id="idiv2">
+				<iframe id="iframe_main2" width="560" height="315" src="https://www.youtube.com/embed/21L66rfN95A" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			</div>
+
+			<div id="idiv3">
+
+				<p id="iframe_main3"><strong>약성가는 용왕이 진단 받을 때 나오는 노래이고,<br>
+				좌우나졸은 토끼가 용궁에서 잡혀 자신이 약인줄 알았을 떄의 상황</strong></p>
+			</div>
+			
+			<img class="tur" src="./turtle.png">
+			<img id="bbwa" class="bwa" src="./wave3.png">
+			<img class="rab" src="./rabbit2.png">\
+
+			<h2>수궁가</h2>
+			<div class="bbpan"></div>
+			<p>수궁가는
+			 용왕이 병에 들자 약에 사용할 토끼의 간을 구하기 위해 자라가 지상으로 나와 토끼를 꾀어내는 낸다. 그러나 토끼가 꾀를 내어 용왕을 속이고 살아 돌아온다는 내용을 담고 있다.
+			<br><br>
+			『수궁가』말고도 『토끼타령』, 『별주부타령』, 『토별가』라고 부르기도 한다.
+			<br>
+			수궁가에서 이름난 대복은 용왕탄식, 약성가, 토끼화상, 고고천변, 토끼와 자라, 토끼신세, 토끼기변, 가자가자, 백매주를 바삐 지나, 토끼욕설을 들 수 있다.</p>
+
+		</div>
+
+
+
+		
+	</section>
+
+	<section class="b1">
+		<div class="wrap">
+			
+			<ul>
+			<li><a href="https://youtu.be/jbK68mHsLfg">1.약성가</a></li>
+			<li><a href="">2.약성가</a></li>
+			<li><a href="https://youtu.be/SmTRaSg2fTQ">3.범내려온다</a></li>
+			<li><a href="https://youtu.be/1gLV8G7SkQE">4.좌우나졸</a></li>
+			<li><a href="https://youtu.be/21L66rfN95A">5.좌우나졸</a></li>
+			<li><a href="https://youtu.be/6hrkXkGNQ34">6.좌우나졸</a></li>
+			<li><a href="https://youtu.be/5U3gX9Qk4yk">7.별주부가 울며 여쫘우되</a></li>
+			
+		</ul>
+		</div>
+	</section>
+	
+
+
+
+
+	
+	
+
+
+	<footer>
+		<div class="wrap">
+			<p>2019.11.24.과제/ 한경대학교 디자인과/ 김지희</p>
+		</div>
+	</footer>
+
+	<script type="text/javascript">
+		window.onscroll = function(){
+		var t = document.documentElement.scrollTop + document.body.scrollTop;
+		monitor.innerHTML = t.toFixed(1);
+
+		if ( t > 100) {ap.style.animation = "a 1s forwards";}
+		else{ap.style.animation = "";}
+
+		if ( t > 900) {cp.style.animation = "c 1s forwards";}
+		else{cp.style.animation = "";}
+
+		if ( t > 1950) {dp.style.animation = "d 1s forwards";}
+		else{dp.style.animation = "";}
+		
+		
+
+		if ( t > 3600) {iframe_main2.style.animation = "vi1 1s forwards";}
+		else{iframe_main2.style.animation = "";}
+		
+		if ( t > 3500) {iframe_main.style.animation = "vi1 1s forwards";}
+		else{iframe_main.style.animation = "";}
+
+		if ( t > 3400) {iframe_main3.style.animation = "vi1 1s forwards";}
+		else{iframe_main3.style.animation = "";}}
+
+		var hancstate ="off";
+		hanc.onclick=function(){
+		if(hancstate =="off"){
+			hanv.style.opacity="1";
+			
+			hancstate = "on";}
+		else{hanv.style.opacity ="0";
+			
+			hancstate = "off";}}
+		
+
+
+
+	</script>
+
+</body>
+</html>
